@@ -1,4 +1,4 @@
-- hosts: home
+- hosts: pi_servers
   become: true
   become_user: root
   tasks:
