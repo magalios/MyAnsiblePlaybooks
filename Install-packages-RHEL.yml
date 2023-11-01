@@ -1,0 +1,10 @@
+- hosts: all
+  tasks:
+  - name: Package installation
+    yum:
+      name:
+        - sysstat
+        - httpd
+        - mariadb-server
+      state: latest
+      update_cache: true
