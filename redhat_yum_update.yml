@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: true
+  tasks:
+  - name: install updates (Redhat)
+    yum:
+      name: '*'
+      state: latest
+      update_cache: yes
